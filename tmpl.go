@@ -76,7 +76,7 @@ func Slice%s(v *%s) []interface{} {
 `
 
 const sSelectRow = `
-func Select%s(db *sql.DB, query string, args ...interface{}) (*%s, error) {
+func Select%s(db *sqlx.DB, query string, args ...interface{}) (*%s, error) {
 	row := db.QueryRow(query, args...)
 	return Scan%s(row)
 }
@@ -84,7 +84,7 @@ func Select%s(db *sql.DB, query string, args ...interface{}) (*%s, error) {
 
 // function template to select multiple rows.
 const sSelectRows = `
-func Select%s(db *sql.DB, query string, args ...interface{}) ([]*%s, error) {
+func Select%s(db *sqlx.DB, query string, args ...interface{}) ([]*%s, error) {
 	rows, err := db.Query(query, args...)
 	if err != nil {
 		return nil, err
@@ -96,7 +96,7 @@ func Select%s(db *sql.DB, query string, args ...interface{}) ([]*%s, error) {
 
 // function template to insert a single row.
 const sInsert = `
-func Insert%s(db *sql.DB, query string, v *%s) error {
+func Insert%s(db *sqlx.DB, query string, v *%s) error {
 
 	res, err := db.Exec(query, Slice%s(v)[1:]...)
 	if err != nil {
@@ -110,7 +110,7 @@ func Insert%s(db *sql.DB, query string, v *%s) error {
 
 // function template to update a single row.
 const sUpdate = `
-func Update%s(db *sql.DB, query string, v *%s) error {
+func Update%s(db *sqlx.DB, query string, v *%s) error {
 
 	args := Slice%s(v)[1:]
 	args = append(args, v.ID)

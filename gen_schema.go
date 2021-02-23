@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/go-openapi/inflect"
 	"io"
-	"sqlxgen/schema"
+	"projects/sqlxgen/schema"
 	"strings"
 )
 

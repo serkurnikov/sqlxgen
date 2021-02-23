@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"sqlxgen/parse"
-	"sqlxgen/schema"
+	"projects/sqlxgen/parse"
+	"projects/sqlxgen/schema"
 )
 
 var (

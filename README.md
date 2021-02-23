@@ -1,11 +1,11 @@
-**sqlgen** generates SQL statements and database helper functions from your Go structs. It can be used in place of a simple ORM or hand-written SQL. See the [demo](https://github.com/drone/sqlgen/tree/master/demo) directory for examples.
+**sqlxgen** generates SQL statements and database helper functions from your Go structs. It can be used in place of a simple ORM or hand-written SQL. See the [demo](https://github.com/drone/sqlgen/tree/master/demo) directory for examples.
 
 ### Install
 
 Install or upgrade with this command:
 
 ```
-go get -u github.com/drone/sqlgen
+go get -u github.com/serkurnikov/sqlxgen
 ```
 
 ### Usage
@@ -43,7 +43,7 @@ type User struct {
 We can run the following command:
 
 ```
-sqlgen -file user.go -type User -pkg demo
+sqlxgen -file user.go -type User -pkg demo
 ```
 
 The tool outputs the following generated code:
@@ -252,7 +252,7 @@ Example use with `go:generate`:
 ```Go
 package demo
 
-//go:generate sqlgen -file user.go -type User -pkg demo -o user_sql.go
+//go:generate sqlxgen -file user.go -type User -pkg demo -o user_sql.go
 
 type User struct {
     ID     int64  `sql:"pk: true, auto: true"`

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/acsellers/inflections"
 	"io"
-	"sqlxgen/parse"
+	"projects/sqlxgen/parse"
 	"strings"
 )
 

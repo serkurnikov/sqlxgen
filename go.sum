@@ -1,0 +1,7 @@
+github.com/acsellers/inflections v0.0.0-20141027155830-cb98bfe9e3ee h1:KPPWi9J6uOAe2L8q0SqEe082jRe7sA8WSXjfkJB9sew=
+github.com/acsellers/inflections v0.0.0-20141027155830-cb98bfe9e3ee/go.mod h1:ghjx0tx0tUMYVfbrtO6CzD+Ow4hilSBq0ZSRv0FbBsk=
+github.com/go-openapi/inflect v0.19.0 h1:9jCH9scKIbHeV9m12SmPilScz6krDxKRasNNSNPXu/4=
+github.com/go-openapi/inflect v0.19.0/go.mod h1:lHpZVlpIQqLyKwJ4N+YSc9hchQy/i12fJykb83CRBH4=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.4.0 h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=
+gopkg.in/yaml.v2 v2.4.0/go.mod h1:RDklbk79AGWmwhnvt/jBztapEOGDOx6ZbXqjP6csGnQ=

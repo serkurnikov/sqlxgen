@@ -2,7 +2,7 @@ package schema
 
 import (
 	"github.com/acsellers/inflections"
-	"sqlxgen/parse"
+	"projects/sqlxgen/parse"
 	"strings"
 )
 

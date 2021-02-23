@@ -1,0 +1,4 @@
+sqlxgen
+*.sqlite
+*.txt
+_docs

@@ -1,0 +1,2 @@
+# sqlxgen
+sqlx code generation
